@@ -68,13 +68,13 @@ crc64.fnc_result = function(self)
 	if not self._c1 then return end	 
 	self._crc64_int =
 		self._c1 +
-		self._c2 * (256) +
-		self._c3 * (256 * 256) +
-		self._c4 * (256 * 256 * 256) +
-		self._c5 * (256 * 256 * 256 * 256) +
-		self._c6 * (256 * 256 * 256 * 256 * 256) +
-		self._c7 * (256 * 256 * 256 * 256 * 256 * 256) +
-		self._c8 * (256 * 256 * 256 * 256 * 256 * 256 * 256)
+		self._c2 * 256 +
+		self._c3 * 256 * 256 +
+		self._c4 * 256 * 256 * 256 +
+		self._c5 * 256 * 256 * 256 * 256 +
+		self._c6 * 256 * 256 * 256 * 256 * 256 +
+		self._c7 * 256 * 256 * 256 * 256 * 256 * 256 +
+		self._c8 * 256 * 256 * 256 * 256 * 256 * 256 * 256
 	self._crc64_str = string.format("%02X", self._crc64_int)
 	return self._crc64_int, self._crc64_str,
 		self._c1, self._c2, self._c3, self._c4,
@@ -84,3 +84,4 @@ end
 
 return crc64;
 
+-- @@@@@
