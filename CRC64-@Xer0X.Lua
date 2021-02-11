@@ -1,9 +1,6 @@
-﻿--[[	@Xer0X CopyLeft 2019
+--[[	@Xer0X CopyLeft 2019
 	Православие или Смерть! Group
-	White Power Resistance Commando@line team
 	..
-	Presenting to you!
-
 	This script is simplified implementation
 	of common CRC64 algorithm.
 ]]
